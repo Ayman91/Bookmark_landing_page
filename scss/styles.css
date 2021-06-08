@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Rubik';
+}
+
+body {
+  font-size: 18px;
+}
+/*# sourceMappingURL=styles.css.map */
