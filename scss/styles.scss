@@ -1,13 +1,84 @@
 // Importing fonts
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+// Theme main colors
+$Soft_Red: hsl(0, 94%, 66%);
+$Soft_Blue: hsl(231, 69%, 60%);
+$Grayish_Blue: hsl(229, 8%, 60%);
+$Very_Dark_Blue: hsl(229, 31%, 21%);
+$light_dark_blue: hsl(228, 45%, 44%);
+
 // preset page styles
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Rubik';
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik";
+  box-sizing: border-box;
 }
 
-body {
-    font-size: 18px;
+// Responsive for phone
+@mixin phone_portrait {
+  @media (min-width: 300px) and (max-width: 424px) {
+    @content;
+  }
+}
+
+@include phone_portrait {
+  body {
+    font-size: 16px;
+    // container
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+    // hide desktop navigation
+    .d-nav {
+      display: none;
+    }
+    // mobile navigation
+    .m-nav {
+      height: 100vh;
+      display: grid;
+      background-color: $Very_Dark_Blue;
+      .m__nav--header {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        justify-content: space-between;
+      }
+      .m__nav--menu {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        flex-direction: column;
+        justify-content: start;
+        li {
+          width: 200px;
+          text-align: center;
+          padding: 1em;
+          width: 100%;
+          letter-spacing: 3px;
+          color: $Grayish_Blue;
+          border-top: 0.1px solid $Grayish_Blue;
+          text-transform: uppercase;
+          &:last-child {
+            padding: 5px;
+            font-weight: 600;
+            border-radius: 5px;
+            border: 2px solid $Grayish_Blue;
+            a {
+              color: $Grayish_Blue;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+      .m__nav--social-Links {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        justify-content: space-evenly;
+      }
+    }
+  }
 }

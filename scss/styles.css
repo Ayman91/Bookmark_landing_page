@@ -2,12 +2,87 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Rubik";
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Rubik';
 }
 
-body {
-  font-size: 18px;
+@media (min-width: 300px) and (max-width: 424px) {
+  body {
+    font-size: 16px;
+  }
+  body .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  body .d-nav {
+    display: none;
+  }
+  body .m-nav {
+    height: 100vh;
+    display: -ms-grid;
+    display: grid;
+    background-color: #252b46;
+  }
+  body .m-nav .m__nav--header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style-type: none;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body .m-nav .m__nav--menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style-type: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  body .m-nav .m__nav--menu li {
+    width: 200px;
+    text-align: center;
+    padding: 1em;
+    width: 100%;
+    letter-spacing: 3px;
+    color: #9194a1;
+    border-top: 0.1px solid #9194a1;
+    text-transform: uppercase;
+  }
+  body .m-nav .m__nav--menu li:last-child {
+    padding: 5px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 2px solid #9194a1;
+  }
+  body .m-nav .m__nav--menu li:last-child a {
+    color: #9194a1;
+    text-decoration: none;
+  }
+  body .m-nav .m__nav--social-Links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style-type: none;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
