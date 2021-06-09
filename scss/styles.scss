@@ -7,6 +7,7 @@ $Soft_Blue: hsl(231, 69%, 60%);
 $Grayish_Blue: hsl(229, 8%, 60%);
 $Very_Dark_Blue: hsl(229, 31%, 21%);
 $light_dark_blue: hsl(228, 45%, 44%);
+$white: #f7f7f7;
 
 // preset page styles
 * {
@@ -23,23 +24,53 @@ $light_dark_blue: hsl(228, 45%, 44%);
   }
 }
 
+// button mixins
+@mixin button(
+  $background,
+  $backgroundcolor,
+  $border,
+  $borderRadius,
+  $padding,
+  $color
+) {
+  background-color: $backgroundcolor;
+  border-radius: $borderRadius;
+  background: $background;
+  padding: $padding;
+  border: $border;
+  color: $color;
+}
+
 @include phone_portrait {
   body {
     font-size: 16px;
+
     // container
     .container {
       width: 80%;
       margin: 0 auto;
     }
-    // hide desktop navigation
+
+    // Mobile responsive navigation
+    .m__nav--responsive {
+      display: flex;
+      margin-top: 20px;
+      align-items: center;
+      list-style-type: none;
+      justify-content: space-between;
+    }
+    // hidden desktop navigation
     .d-nav {
       display: none;
     }
-    // mobile navigation
-    .m-nav {
+
+    // mobile navigation hover
+    .m__nav--hover {
+      position: absolute;
       height: 100vh;
-      display: grid;
-      background-color: $Very_Dark_Blue;
+      width: 100%;
+      display: none; //display grid to appear
+      background-color: rgba(37, 43, 70, 0.95);
       .m__nav--header {
         display: flex;
         align-items: center;
@@ -78,6 +109,44 @@ $light_dark_blue: hsl(228, 45%, 44%);
         align-items: center;
         list-style-type: none;
         justify-content: space-evenly;
+      }
+    }
+
+    // Herobox section
+    .herobox {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      .hero_text--section {
+        order: 2;
+        h1 {
+          text-align: center;
+        }
+        p {
+          margin: 20px 0;
+          text-align: center;
+          line-height: 1.3em;
+          color: $Grayish_Blue;
+        }
+        .buttons {
+          display: flex;
+          justify-content: space-evenly;
+          input[type="button"]:first-child {
+            @include button($Soft_Blue, none, 5px, 5px, 10px, $white);
+          }
+          input[type="button"]:last-child {
+            @include button($white, none, 5px, 5px, 10px, $Very_Dark_Blue);
+            font-weight: 600;
+            box-shadow: 0 4px 5px 1px #ddf;
+          }
+        }
+      }
+      .hero_image--section {
+        order: 1;
+        img {
+          width: 100% !important;
+          height: 100% !important;
+        }
       }
     }
   }

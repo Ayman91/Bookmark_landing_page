@@ -17,7 +17,21 @@
 
   <body>
     <!-- Mobile Navigation -->
-    <nav class="m-nav">
+    <nav>
+      <ul class="m__nav--responsive container">
+        <li>
+          <img src="/images/logo-bookmark.svg" alt="bookmark logo" />
+        </li>
+        <li>
+          <a href=""
+            ><img src="images/icon-hamburger.svg" alt="close icon"
+          /></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Mobile Navigation Hover-->
+    <nav class="m__nav--hover">
       <ul class="m__nav--header container">
         <li>
           <img src="/images/logo-bookmark-white.svg" alt="bookmark logo" />
@@ -56,8 +70,8 @@
     </nav>
 
     <!-- Herobox section -->
-    <!-- <section>
-      <div class="text-section">
+    <section class="herobox container">
+      <div class="hero_text--section">
         <h1>A Simple Bookmark Manager</h1>
         <p>
           A clean and simple interface to organize your favourite websites. Open
@@ -68,10 +82,10 @@
           <input type="button" value="Get it on Firefox" />
         </div>
       </div>
-      <div class="image-section">
+      <div class="hero_image--section">
         <img src="images/illustration-hero.svg" alt="hero image" />
       </div>
-    </section> -->
+    </section>
 
     <!-- Features Section -->
     <!-- <section class="features-section">
