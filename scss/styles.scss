@@ -306,5 +306,36 @@ $white: #f7f7f7;
         }
       }
     }
+
+    // FAQ section
+    .faq-section {
+      margin-top: 40px;
+      .faq__section--content {
+        margin-bottom: 80px;
+        .faq__section--title {
+          margin: 0px auto 25px auto;
+          text-align: center;
+          width: 90%;
+        }
+        .faq__section--paragraph {
+          color: $Grayish_Blue;
+          line-height: 1.6em;
+          text-align: center;
+        }
+      }
+      .faq__section--q1,
+      .faq__section--q2,
+      .faq__section--q3,
+      .faq__section--q4 {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+      input[type="button"] {
+        display: block;
+        margin: 35px auto;
+        @include button($Soft_Blue, none, 5px, 5px, 15px 25px, $white);
+      }
+    }
   }
 }
