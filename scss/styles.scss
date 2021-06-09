@@ -1,5 +1,5 @@
 // Importing fonts
-@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
 
 // Theme main colors
 $Soft_Red: hsl(0, 94%, 66%);
@@ -374,6 +374,54 @@ $white: #f7f7f7;
           width: 100%;
           font-weight: 600;
           @include button($Soft_Red, none, 5px, 5px, 15px 10px, $white);
+        }
+      }
+    }
+
+    // Footer section
+    .footer__section {
+      height: 400px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: $Very_Dark_Blue;
+      .container {
+        .footer__img--logo {
+          height: 100px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+        }
+        .footer__section--ul {
+          margin-bottom: 30px;
+          color: $white;
+          text-align: center;
+          list-style-type: none;
+          text-transform: uppercase;
+          li {
+            padding: 15px;
+            font-weight: lighter !important;
+          }
+        }
+        .footer__social--links {
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+          justify-content: space-evenly;
+        }
+      }
+      .attribution {
+        font-size: 12px;
+        a {
+          text-decoration: none;
+          color: $light_dark_blue;
+          font-style: italic !important;
+        }
+        em {
+          color: $light_dark_blue;
+          font-style: italic !important;
         }
       }
     }

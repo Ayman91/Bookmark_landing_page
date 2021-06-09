@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -442,6 +442,77 @@
     padding: 15px 10px;
     border: 5px;
     color: #f7f7f7;
+  }
+  body .footer__section {
+    height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: #252b46;
+  }
+  body .footer__section .container .footer__img--logo {
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .footer__section .container .footer__section--ul {
+    margin-bottom: 30px;
+    color: #f7f7f7;
+    text-align: center;
+    list-style-type: none;
+    text-transform: uppercase;
+  }
+  body .footer__section .container .footer__section--ul li {
+    padding: 15px;
+    font-weight: lighter !important;
+  }
+  body .footer__section .container .footer__social--links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  body .footer__section .attribution {
+    font-size: 12px;
+  }
+  body .footer__section .attribution a {
+    text-decoration: none;
+    color: #3e52a3;
+    font-style: italic !important;
+  }
+  body .footer__section .attribution em {
+    color: #3e52a3;
+    font-style: italic !important;
   }
 }
 /*# sourceMappingURL=styles.css.map */
