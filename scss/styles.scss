@@ -337,5 +337,45 @@ $white: #f7f7f7;
         @include button($Soft_Blue, none, 5px, 5px, 15px 25px, $white);
       }
     }
+
+    // Newsletter section
+    .newsletter__section {
+      display: flex;
+      height: 300px;
+      text-align: center;
+      flex-direction: column;
+      background-color: $Soft_Blue;
+      justify-content: space-around;
+      .container {
+        .newsletter__section--title,
+        .newsletter__section--paragraph {
+          color: $white;
+          letter-spacing: 5px;
+        }
+        .newsletter__section--paragraph {
+          color: $white;
+          letter-spacing: 5px;
+          font-size: 1.14em;
+          margin: 20px 0;
+        }
+        input[type="text"] {
+          outline: none;
+          background-color: $white;
+          border: none;
+          display: block;
+          width: 100%;
+          color: $Grayish_Blue;
+          border-radius: 5px;
+          padding: 15px 10px;
+        }
+        input[type="button"] {
+          display: block;
+          margin-top: 15px;
+          width: 100%;
+          font-weight: 600;
+          @include button($Soft_Red, none, 5px, 5px, 15px 10px, $white);
+        }
+      }
+    }
   }
 }
