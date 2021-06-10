@@ -513,6 +513,7 @@
   body .footer__section .attribution em {
     color: #3e52a3;
     font-style: italic !important;
+    font-size: 12px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
