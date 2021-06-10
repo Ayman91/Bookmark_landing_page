@@ -1,17 +1,49 @@
 // responsive for Desktop
 @include desktop {
   body {
+    font-size: 16px;
+
+    // container
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
     // hide mobile navigation
     .m__nav--menu,
     .m__nav--hover {
       display: none;
     }
+
     // hide class
     .hide {
       display: none;
     }
+
+    // Desktop navigation
     .d__nav {
-      background-color: #f00;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+      .d__nav--items {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        li {
+          cursor: pointer;
+          padding: 5px 20px;
+          display: inline-block;
+          text-transform: uppercase;
+          &:last-child {
+            color: $white;
+            padding: 5px 20px;
+            border-radius: 5px;
+            background-color: $Soft_Red;
+          }
+        }
+      }
     }
   }
 }
