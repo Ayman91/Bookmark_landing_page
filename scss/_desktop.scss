@@ -45,5 +45,40 @@
         }
       }
     }
+
+    // Herobox Section
+    .herobox {
+      margin-top: 40px;
+      display: flex;
+
+      .hero_text--section {
+        width: 50%;
+        display: grid;
+        align-items: center;
+        .hero_text--paragraph {
+          line-height: 1.5em;
+          color: $Grayish_Blue;
+        }
+        .buttons {
+          align-self: flex-end;
+          input[type="button"]:first-child {
+            @include button($Soft_Blue, none, 5px, 5px, 10px, $white);
+            margin-right: 20px;
+          }
+          input[type="button"]:last-child {
+            @include button($white, none, 5px, 5px, 10px, $Very_Dark_Blue);
+            font-weight: 600;
+            box-shadow: 0 4px 5px 1px #ddf;
+          }
+        }
+      }
+      .hero_image--section {
+        width: 50%;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
   }
 }

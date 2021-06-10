@@ -571,5 +571,54 @@
     border-radius: 5px;
     background-color: #fa5757;
   }
+  body .herobox {
+    margin-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .herobox .hero_text--section {
+    width: 50%;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .herobox .hero_text--section .hero_text--paragraph {
+    line-height: 1.5em;
+    color: #9194a1;
+  }
+  body .herobox .hero_text--section .buttons {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  body .herobox .hero_text--section .buttons input[type="button"]:first-child {
+    background-color: none;
+    border-radius: 5px;
+    background: #5368df;
+    padding: 10px;
+    border: 5px;
+    color: #f7f7f7;
+    margin-right: 20px;
+  }
+  body .herobox .hero_text--section .buttons input[type="button"]:last-child {
+    background-color: none;
+    border-radius: 5px;
+    background: #f7f7f7;
+    padding: 10px;
+    border: 5px;
+    color: #252b46;
+    font-weight: 600;
+    -webkit-box-shadow: 0 4px 5px 1px #ddf;
+            box-shadow: 0 4px 5px 1px #ddf;
+  }
+  body .herobox .hero_image--section {
+    width: 50%;
+  }
+  body .herobox .hero_image--section img {
+    width: 100%;
+    height: 100%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
