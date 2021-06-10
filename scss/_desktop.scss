@@ -1,0 +1,17 @@
+// responsive for Desktop
+@include desktop {
+  body {
+    // hide mobile navigation
+    .m__nav--menu,
+    .m__nav--hover {
+      display: none;
+    }
+    // hide class
+    .hide {
+      display: none;
+    }
+    .d__nav {
+      background-color: #f00;
+    }
+  }
+}

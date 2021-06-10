@@ -98,6 +98,9 @@
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
+  body .d__nav {
+    display: none;
+  }
   body .herobox {
     margin-top: 40px;
     display: -webkit-box;
@@ -513,6 +516,19 @@
     color: #3e52a3;
     font-style: italic !important;
     font-size: 12px;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 1440px) {
+  body .m__nav--menu,
+  body .m__nav--hover {
+    display: none;
+  }
+  body .hide {
+    display: none;
+  }
+  body .d__nav {
+    background-color: #f00;
   }
 }
 /*# sourceMappingURL=styles.css.map */
