@@ -347,15 +347,14 @@ $white: #f7f7f7;
       background-color: $Soft_Blue;
       justify-content: space-around;
       .container {
-        .newsletter__section--title,
-        .newsletter__section--paragraph {
+        .newsletter__section--title {
           color: $white;
           letter-spacing: 5px;
+          font-size: 12px;
         }
         .newsletter__section--paragraph {
           color: $white;
-          letter-spacing: 5px;
-          font-size: 1.14em;
+          font-weight: 400;
           margin: 20px 0;
         }
         input[type="text"] {

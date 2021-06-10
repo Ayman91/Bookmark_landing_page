@@ -410,15 +410,14 @@
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  body .newsletter__section .container .newsletter__section--title,
-  body .newsletter__section .container .newsletter__section--paragraph {
+  body .newsletter__section .container .newsletter__section--title {
     color: #f7f7f7;
     letter-spacing: 5px;
+    font-size: 12px;
   }
   body .newsletter__section .container .newsletter__section--paragraph {
     color: #f7f7f7;
-    letter-spacing: 5px;
-    font-size: 1.14em;
+    font-weight: 400;
     margin: 20px 0;
   }
   body .newsletter__section .container input[type="text"] {
