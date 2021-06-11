@@ -167,8 +167,8 @@
       margin-top: 40px;
       .download__section--content {
         .download__section--header {
-          margin-bottom: 20px;
           text-align: center;
+          margin-bottom: 20px;
         }
         .download__section--paragraph {
           text-align: center;
@@ -178,7 +178,10 @@
       }
       .download__section--products {
         display: flex;
-        justify-content: center;
+        background-color: lightblue;
+        height: 500px;
+        margin-top: 50px;
+        justify-content: space-evenly;
         .download__chrome--card,
         .download__firefox--card,
         .download__opera--card {
@@ -194,7 +197,6 @@
           }
         }
         .download__chrome--card {
-          justify-content: start;
           .chrome__title--card,
           .chrome__text--card {
             text-align: center;
