@@ -532,7 +532,7 @@
     display: none;
   }
   body .hide {
-    display: none;
+    display: none !important;
   }
   body .d__nav {
     height: 50px;
@@ -689,7 +689,6 @@
   body .features-section .features__section--tabs .features__section--tab3 .feat__tab1--img,
   body .features-section .features__section--tabs .features__section--tab3 .feat__tab2--img,
   body .features-section .features__section--tabs .features__section--tab3 .feat__tab3--img {
-    background-color: darkgreen;
     -ms-grid-column: 1;
     grid-column: 1;
     -ms-grid-row: 1;
@@ -704,7 +703,6 @@
     grid-column: 2;
     -ms-grid-row: 1;
     grid-row: 1;
-    background-color: #ddd;
   }
   body .features-section .features__section--tabs .features__section--tab1 .features__tab--content .features__tab1--header,
   body .features-section .features__section--tabs .features__section--tab1 .features__tab--content .features__tab2--header,
@@ -733,6 +731,7 @@
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+    width: 80%;
   }
   body .features-section .features__section--tabs .features__section--tab1 .features__tab--content .features__tab1--button,
   body .features-section .features__section--tabs .features__section--tab1 .features__tab--content .features__tab2--button,

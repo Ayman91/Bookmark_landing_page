@@ -17,7 +17,7 @@
 
     // hide class
     .hide {
-      display: none;
+      display: none !important;
     }
 
     // Desktop navigation
@@ -128,7 +128,6 @@
           .feat__tab1--img,
           .feat__tab2--img,
           .feat__tab3--img {
-            background-color: darkgreen;
             grid-column: 1;
             grid-row: 1;
           }
@@ -136,7 +135,6 @@
             display: grid;
             grid-column: 2;
             grid-row: 1;
-            background-color: #ddd;
             .features__tab1--header,
             .features__tab2--header,
             .features__tab3--header {
@@ -148,6 +146,7 @@
               color: $Grayish_Blue;
               line-height: 1.5em;
               align-self: center;
+              width: 80%;
             }
             .features__tab1--button,
             .features__tab2--button,
