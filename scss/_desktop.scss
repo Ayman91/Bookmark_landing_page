@@ -161,5 +161,88 @@
         }
       }
     }
+
+    // Download section
+    .download-section {
+      margin-top: 40px;
+      .download__section--content {
+        .download__section--header {
+          margin-bottom: 20px;
+          text-align: center;
+        }
+        .download__section--paragraph {
+          text-align: center;
+          line-height: 1.5em;
+          color: $Grayish_Blue;
+        }
+      }
+      .download__section--products {
+        display: flex;
+        justify-content: center;
+        .download__chrome--card,
+        .download__firefox--card,
+        .download__opera--card {
+          width: 200px;
+          height: 300px;
+          text-align: center;
+          border-radius: 5px;
+          box-shadow: 0 0 5px 5px #ddd;
+          .chrome__img--logo,
+          .firefox__img--logo,
+          .opera__img--logo {
+            margin: 20px;
+          }
+        }
+        .download__chrome--card {
+          justify-content: start;
+          .chrome__title--card,
+          .chrome__text--card {
+            text-align: center;
+          }
+          .chrome__text--card {
+            line-height: 1.3em;
+            margin: 15px 0 20px;
+            color: $Grayish_Blue;
+          }
+          .chrome__border--bg {
+            width: 100%;
+          }
+          input[type="button"] {
+            margin: 10px;
+            @include button($Soft_Blue, none, 5px, 5px, 10px, $white);
+          }
+        }
+        .download__firefox--card {
+          justify-content: center;
+          .firefox__text--card {
+            line-height: 1.3em;
+            margin: 15px 0 20px;
+            color: $Grayish_Blue;
+          }
+          .firefox__border--bg {
+            width: 100%;
+          }
+          input[type="button"] {
+            margin: 10px;
+            @include button($Soft_Blue, none, 5px, 5px, 10px, $white);
+          }
+        }
+        .download__opera--card {
+          justify-content: end;
+          .opera__text--card {
+            line-height: 1.3em;
+            margin: 15px 0 20px;
+            color: $Grayish_Blue;
+          }
+          .opera__border--bg {
+            width: 100%;
+          }
+          input[type="button"] {
+            margin: 10px;
+            @include button($Soft_Blue, none, 5px, 5px, 10px, $white);
+          }
+        }
+      }
+    }
   }
 }

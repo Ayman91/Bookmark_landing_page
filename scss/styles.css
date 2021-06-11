@@ -763,5 +763,116 @@
     color: #f7f7f7;
     font-weight: 600;
   }
+  body .download-section {
+    margin-top: 40px;
+  }
+  body .download-section .download__section--content .download__section--header {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  body .download-section .download__section--content .download__section--paragraph {
+    text-align: center;
+    line-height: 1.5em;
+    color: #9194a1;
+  }
+  body .download-section .download__section--products {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .download-section .download__section--products .download__chrome--card,
+  body .download-section .download__section--products .download__firefox--card,
+  body .download-section .download__section--products .download__opera--card {
+    width: 200px;
+    height: 300px;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 5px 5px #ddd;
+            box-shadow: 0 0 5px 5px #ddd;
+  }
+  body .download-section .download__section--products .download__chrome--card .chrome__img--logo,
+  body .download-section .download__section--products .download__chrome--card .firefox__img--logo,
+  body .download-section .download__section--products .download__chrome--card .opera__img--logo,
+  body .download-section .download__section--products .download__firefox--card .chrome__img--logo,
+  body .download-section .download__section--products .download__firefox--card .firefox__img--logo,
+  body .download-section .download__section--products .download__firefox--card .opera__img--logo,
+  body .download-section .download__section--products .download__opera--card .chrome__img--logo,
+  body .download-section .download__section--products .download__opera--card .firefox__img--logo,
+  body .download-section .download__section--products .download__opera--card .opera__img--logo {
+    margin: 20px;
+  }
+  body .download-section .download__section--products .download__chrome--card {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  body .download-section .download__section--products .download__chrome--card .chrome__title--card,
+  body .download-section .download__section--products .download__chrome--card .chrome__text--card {
+    text-align: center;
+  }
+  body .download-section .download__section--products .download__chrome--card .chrome__text--card {
+    line-height: 1.3em;
+    margin: 15px 0 20px;
+    color: #9194a1;
+  }
+  body .download-section .download__section--products .download__chrome--card .chrome__border--bg {
+    width: 100%;
+  }
+  body .download-section .download__section--products .download__chrome--card input[type="button"] {
+    margin: 10px;
+    background-color: none;
+    border-radius: 5px;
+    background: #5368df;
+    padding: 10px;
+    border: 5px;
+    color: #f7f7f7;
+  }
+  body .download-section .download__section--products .download__firefox--card {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .download-section .download__section--products .download__firefox--card .firefox__text--card {
+    line-height: 1.3em;
+    margin: 15px 0 20px;
+    color: #9194a1;
+  }
+  body .download-section .download__section--products .download__firefox--card .firefox__border--bg {
+    width: 100%;
+  }
+  body .download-section .download__section--products .download__firefox--card input[type="button"] {
+    margin: 10px;
+    background-color: none;
+    border-radius: 5px;
+    background: #5368df;
+    padding: 10px;
+    border: 5px;
+    color: #f7f7f7;
+  }
+  body .download-section .download__section--products .download__opera--card {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  body .download-section .download__section--products .download__opera--card .opera__text--card {
+    line-height: 1.3em;
+    margin: 15px 0 20px;
+    color: #9194a1;
+  }
+  body .download-section .download__section--products .download__opera--card .opera__border--bg {
+    width: 100%;
+  }
+  body .download-section .download__section--products .download__opera--card input[type="button"] {
+    margin: 10px;
+    background-color: none;
+    border-radius: 5px;
+    background: #5368df;
+    padding: 10px;
+    border: 5px;
+    color: #f7f7f7;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
