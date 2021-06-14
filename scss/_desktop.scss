@@ -1,0 +1,42 @@
+@include desktop {
+  body {
+    .m__nav--menu,
+    .m__nav--hover {
+      display: none;
+    }
+
+    .d__nav {
+      display: flex;
+      align-items: center;
+      height: 40px;
+      justify-content: space-between;
+      a {
+        display: flex;
+        align-self: center;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      ul {
+        width: 500px;
+        display: flex;
+        justify-content: space-between;
+        li {
+          padding: 5px;
+          align-self: center;
+          list-style-type: none;
+          &:last-child {
+            @include button($Soft_Red, $Soft_Red, none, 5px, 6px 20px, $white);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            box-shadow: 0px 4px 5px #ddd;
+          }
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
