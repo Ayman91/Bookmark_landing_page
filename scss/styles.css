@@ -520,6 +520,11 @@
   }
 }
 
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
 @media (min-width: 425px) and (max-width: 1440px) {
   body .m__nav--menu,
   body .m__nav--hover {
@@ -652,6 +657,113 @@
   body .herobox .hero_image--section img {
     height: 100%;
     width: 100%;
+  }
+  body .features-section {
+    margin-top: 40px;
+  }
+  body .features-section .hide {
+    display: none !important;
+  }
+  body .features-section .features__section--header,
+  body .features-section .features__section--paragraph {
+    text-align: center;
+  }
+  body .features-section .features__section--paragraph {
+    color: #9194a1;
+    margin-top: 20px;
+    line-height: 1.4em;
+  }
+  body .features-section .features__section--navigation .features__section--nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 50px 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .features-section .features__section--navigation .features__section--nav li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    list-style-type: none;
+  }
+  body .features-section .features__section--tabs .features__section--tab1,
+  body .features-section .features__section--tabs .features__section--tab2,
+  body .features-section .features__section--tabs .features__section--tab3 {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 90px;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  body .features-section .features__section--tabs .features__section--tab1 .feat__tab1--img img,
+  body .features-section .features__section--tabs .features__section--tab1 .feat__tab2--img img,
+  body .features-section .features__section--tabs .features__section--tab1 .feat__tab3--img img,
+  body .features-section .features__section--tabs .features__section--tab2 .feat__tab1--img img,
+  body .features-section .features__section--tabs .features__section--tab2 .feat__tab2--img img,
+  body .features-section .features__section--tabs .features__section--tab2 .feat__tab3--img img,
+  body .features-section .features__section--tabs .features__section--tab3 .feat__tab1--img img,
+  body .features-section .features__section--tabs .features__section--tab3 .feat__tab2--img img,
+  body .features-section .features__section--tabs .features__section--tab3 .feat__tab3--img img {
+    width: 100%;
+    height: 100%;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  body .features-section .features__section--tabs .features__section--tab1 .features__tab--content,
+  body .features-section .features__section--tabs .features__section--tab2 .features__tab--content,
+  body .features-section .features__section--tabs .features__section--tab3 .features__tab--content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .features-section .features__section--tabs .features__section--tab1 .features__tab--content .features__tab1--header,
+  body .features-section .features__section--tabs .features__section--tab1 .features__tab--content .features__tab2--header,
+  body .features-section .features__section--tabs .features__section--tab1 .features__tab--content .features__tab3--header,
+  body .features-section .features__section--tabs .features__section--tab2 .features__tab--content .features__tab1--header,
+  body .features-section .features__section--tabs .features__section--tab2 .features__tab--content .features__tab2--header,
+  body .features-section .features__section--tabs .features__section--tab2 .features__tab--content .features__tab3--header,
+  body .features-section .features__section--tabs .features__section--tab3 .features__tab--content .features__tab1--header,
+  body .features-section .features__section--tabs .features__section--tab3 .features__tab--content .features__tab2--header,
+  body .features-section .features__section--tabs .features__section--tab3 .features__tab--content .features__tab3--header {
+    margin-bottom: 20px;
+  }
+  body .features-section .features__section--tabs .features__section--tab1 .features__tab--content .features__tab1--paragraph,
+  body .features-section .features__section--tabs .features__section--tab1 .features__tab--content .features__tab2--paragraph,
+  body .features-section .features__section--tabs .features__section--tab1 .features__tab--content .features__tab3--paragraph,
+  body .features-section .features__section--tabs .features__section--tab2 .features__tab--content .features__tab1--paragraph,
+  body .features-section .features__section--tabs .features__section--tab2 .features__tab--content .features__tab2--paragraph,
+  body .features-section .features__section--tabs .features__section--tab2 .features__tab--content .features__tab3--paragraph,
+  body .features-section .features__section--tabs .features__section--tab3 .features__tab--content .features__tab1--paragraph,
+  body .features-section .features__section--tabs .features__section--tab3 .features__tab--content .features__tab2--paragraph,
+  body .features-section .features__section--tabs .features__section--tab3 .features__tab--content .features__tab3--paragraph {
+    color: #9194a1;
+    margin-bottom: 20px;
+    line-height: 1.8em;
+  }
+  body .features-section .features__section--tabs .features__section--tab1 .features__tab--content .features__tab1--button input[type="button"],
+  body .features-section .features__section--tabs .features__section--tab1 .features__tab--content .features__tab2--button input[type="button"],
+  body .features-section .features__section--tabs .features__section--tab1 .features__tab--content .features__tab3--button input[type="button"],
+  body .features-section .features__section--tabs .features__section--tab2 .features__tab--content .features__tab1--button input[type="button"],
+  body .features-section .features__section--tabs .features__section--tab2 .features__tab--content .features__tab2--button input[type="button"],
+  body .features-section .features__section--tabs .features__section--tab2 .features__tab--content .features__tab3--button input[type="button"],
+  body .features-section .features__section--tabs .features__section--tab3 .features__tab--content .features__tab1--button input[type="button"],
+  body .features-section .features__section--tabs .features__section--tab3 .features__tab--content .features__tab2--button input[type="button"],
+  body .features-section .features__section--tabs .features__section--tab3 .features__tab--content .features__tab3--button input[type="button"] {
+    background-color: none;
+    border-radius: 5px;
+    background: #5368df;
+    padding: 10px 20px;
+    border: 5px;
+    color: #f7f7f7;
+    margin-right: 20px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,3 +1,9 @@
+// container
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
 // Responsive for phone
 @mixin phone_portrait {
   @media (min-width: 300px) and (max-width: 424px) {
@@ -5,11 +11,6 @@
   }
 }
 
-// container
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
 // Responsive for Desktop
 @mixin desktop {
   @media (min-width: 425px) and (max-width: 1440px) {
