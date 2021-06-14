@@ -609,7 +609,7 @@
   }
   body .herobox .hero_text--section .hero_text--header {
     font-size: 3em;
-    font-emphasize: normal;
+    font-weight: 500;
     color: #252b46;
   }
   body .herobox .hero_text--section .hero_text--paragraph {
@@ -764,6 +764,9 @@
     border: 5px;
     color: #f7f7f7;
     margin-right: 20px;
+  }
+  body .download-section {
+    margin-top: 40px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
