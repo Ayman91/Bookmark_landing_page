@@ -17,5 +17,12 @@ $Very_Dark_Blue: hsl(229, 31%, 21%);
 $light_dark_blue: hsl(228, 45%, 44%);
 $white: #f7f7f7;
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: $Soft_Blue;
+  border-radius: 10px;
+}
 // Importing responsive styles
 @import "mobile", "desktop";

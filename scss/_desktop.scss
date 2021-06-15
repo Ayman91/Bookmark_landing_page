@@ -1,6 +1,9 @@
 @import "responsive";
 @include desktop {
   body {
+    .hide {
+      display: none !important;
+    }
     .m__nav--menu,
     .m__nav--hover {
       display: none;
@@ -89,9 +92,6 @@
     // Features Section
     .features-section {
       margin-top: 40px;
-      .hide {
-        display: none !important;
-      }
       .features__section--header,
       .features__section--paragraph {
         text-align: center;
@@ -245,6 +245,44 @@
             @include button($Soft_Blue, none, 5px, 5px, 10px, $white);
           }
         }
+      }
+    }
+
+    // FAQ Section
+    .faq-section {
+      margin-top: 100px;
+      .faq__section--header {
+        .faq__section--title {
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        .faq__section--paragraph {
+          color: $Grayish_Blue;
+          line-height: 1.5em;
+          text-align: center;
+          margin-bottom: 50px;
+        }
+      }
+      .faq__questions {
+        width: 40%;
+        margin: 0 auto;
+        p.question {
+          padding: 20px;
+          border-top: 1px solid #ddd;
+          &:nth-child(7) {
+            border-bottom: 1px solid #ddd;
+          }
+        }
+      }
+    }
+
+    // Newsletter Section
+    .newsletter__section {
+      height: 300px;
+      background-color: $Soft_Blue;
+      .newsletter__section--title,
+      .newsletter__section--paragraph {
+        text-align: center;
       }
     }
   }
