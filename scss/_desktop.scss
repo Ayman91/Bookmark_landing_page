@@ -4,6 +4,7 @@
     .hide {
       display: none !important;
     }
+
     .m__nav--menu,
     .m__nav--hover {
       display: none;
@@ -266,13 +267,9 @@
       .faq__questions {
         width: 40%;
         margin: 0 auto;
-        p.question {
-          padding: 20px;
-          border-top: 1px solid #ddd;
-          &:nth-child(7) {
-            border-bottom: 1px solid #ddd;
-          }
-        }
+      }
+      .answer {
+        color: $Grayish_Blue;
       }
     }
 

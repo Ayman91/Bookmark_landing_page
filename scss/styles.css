@@ -917,12 +917,8 @@
     width: 40%;
     margin: 0 auto;
   }
-  body .faq-section .faq__questions p.question {
-    padding: 20px;
-    border-top: 1px solid #ddd;
-  }
-  body .faq-section .faq__questions p.question:nth-child(7) {
-    border-bottom: 1px solid #ddd;
+  body .faq-section .answer {
+    color: #9194a1;
   }
   body .newsletter__section {
     height: 300px;
