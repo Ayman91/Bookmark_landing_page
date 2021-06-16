@@ -978,5 +978,8 @@
     text-transform: uppercase;
     padding: 5px 10px;
   }
+  body .footer__section .container .footer__social--links a {
+    margin: 10px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
