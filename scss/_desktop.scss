@@ -268,14 +268,26 @@
         width: 40%;
         margin: 0 auto;
       }
+      .question {
+        margin: 10px 0;
+        font-weight: bold;
+        color: $Very_Dark_Blue;
+        &:hover {
+          color: $Soft_Red;
+          cursor: pointer;
+        }
+      }
       .answer {
+        margin: 10px 0;
         color: $Grayish_Blue;
+        line-height: 1.8em;
       }
     }
 
     // Newsletter Section
     .newsletter__section {
       height: 300px;
+      margin-top: 40px;
       background-color: $Soft_Blue;
       .newsletter__section--title,
       .newsletter__section--paragraph {

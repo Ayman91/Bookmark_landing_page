@@ -917,11 +917,23 @@
     width: 40%;
     margin: 0 auto;
   }
+  body .faq-section .question {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #252b46;
+  }
+  body .faq-section .question:hover {
+    color: #fa5757;
+    cursor: pointer;
+  }
   body .faq-section .answer {
+    margin: 10px 0;
     color: #9194a1;
+    line-height: 1.8em;
   }
   body .newsletter__section {
     height: 300px;
+    margin-top: 40px;
     background-color: #5368df;
   }
   body .newsletter__section .newsletter__section--title,
