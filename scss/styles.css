@@ -926,6 +926,9 @@
     color: #fa5757;
     cursor: pointer;
   }
+  body .faq-section .question img {
+    float: right;
+  }
   body .faq-section .answer {
     margin: 10px 0;
     color: #9194a1;
@@ -939,6 +942,41 @@
   body .newsletter__section .newsletter__section--title,
   body .newsletter__section .newsletter__section--paragraph {
     text-align: center;
+  }
+  body .footer__section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #252b46;
+  }
+  body .footer__section .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  body .footer__section .container nav ul {
+    color: #f7f7f7;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+  }
+  body .footer__section .container nav ul li {
+    text-transform: uppercase;
+    padding: 5px 10px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
