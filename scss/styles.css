@@ -949,9 +949,54 @@
     margin-top: 40px;
     background-color: #5368df;
   }
-  body .newsletter__section .newsletter__section--title,
-  body .newsletter__section .newsletter__section--paragraph {
+  body .newsletter__section .container {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .newsletter__section .container .newsletter__section--title,
+  body .newsletter__section .container .newsletter__section--paragraph {
     text-align: center;
+    color: #f7f7f7;
+  }
+  body .newsletter__section .container .newsletter__section--title {
+    letter-spacing: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  body .newsletter__section .container .newsletter__section--paragraph {
+    font-size: 24px;
+    font-weight: normal;
+  }
+  body .newsletter__section .container .newsletter__section--buttons input[type="text"] {
+    outline: none;
+    width: 200px;
+    margin: 20px auto;
+    background-color: none;
+    border-radius: 5px;
+    background: #f7f7f7;
+    padding: 10px;
+    border: 5px;
+    color: #9194a1;
+  }
+  body .newsletter__section .container .newsletter__section--buttons input[type="button"] {
+    background-color: none;
+    border-radius: 5px;
+    background: #fa5757;
+    padding: 10px;
+    border: 5px;
+    color: #f7f7f7;
   }
   body .footer__section {
     display: -webkit-box;

@@ -297,9 +297,37 @@
       height: 300px;
       margin-top: 40px;
       background-color: $Soft_Blue;
-      .newsletter__section--title,
-      .newsletter__section--paragraph {
-        text-align: center;
+      .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        .newsletter__section--title,
+        .newsletter__section--paragraph {
+          text-align: center;
+          color: $white;
+        }
+        .newsletter__section--title {
+          letter-spacing: 5px;
+          font-size: 14px;
+          text-transform: uppercase;
+        }
+        .newsletter__section--paragraph {
+          font-size: 24px;
+          font-weight: normal;
+        }
+        .newsletter__section--buttons {
+          input[type="text"] {
+            outline: none;
+            width: 200px;
+            margin: 20px auto;
+            @include button($white, none, 5px, 5px, 10px, $Grayish_Blue);
+          }
+          input[type="button"] {
+            @include button($Soft_Red, none, 5px, 5px, 10px, $white);
+          }
+        }
       }
     }
 
