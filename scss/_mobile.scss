@@ -9,11 +9,11 @@
   $padding,
   $color
 ) {
-  background-color: $backgroundcolor;
-  border-radius: $borderRadius;
   background: $background;
-  padding: $padding;
+  background-color: $backgroundcolor;
   border: $border;
+  border-radius: $borderRadius;
+  padding: $padding;
   color: $color;
 }
 

@@ -32,14 +32,35 @@
           padding: 5px;
           align-self: center;
           list-style-type: none;
+          &:hover {
+            transition: 0.2s;
+            color: $Soft_Red;
+            cursor: pointer;
+          }
           &:last-child {
-            @include button($Soft_Red, $Soft_Red, none, 5px, 6px 20px, $white);
+            transition: 0.2s ease-in;
+            @include button(
+              $Soft_Red,
+              $Soft_Red,
+              2px solid $Soft_Red,
+              5px,
+              6px 20px,
+              $white
+            );
             text-transform: uppercase;
             letter-spacing: 3px;
             box-shadow: 0px 4px 5px #ddd;
-          }
-          &:hover {
-            cursor: pointer;
+            &:hover {
+              transition: 0.2s ease-in;
+              @include button(
+                none,
+                $white,
+                2px solid $Soft_Red,
+                5px,
+                6px 20px,
+                $Soft_Red
+              );
+            }
           }
         }
       }
