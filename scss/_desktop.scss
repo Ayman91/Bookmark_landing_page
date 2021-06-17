@@ -1,4 +1,4 @@
-@import "responsive";
+@import "mixins";
 @include desktop {
   body {
     .hide {
@@ -66,6 +66,7 @@
         }
       }
     }
+
     // Herobox section
     .herobox {
       margin-top: 40px;
@@ -220,6 +221,7 @@
               input[type="button"] {
                 @include button($Soft_Blue, none, 5px, 5px, 10px 20px, $white);
                 margin-right: 20px;
+                cursor: pointer;
               }
             }
           }

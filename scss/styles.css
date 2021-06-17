@@ -21,6 +21,11 @@
   margin: 0 auto;
 }
 
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
 @media (min-width: 300px) and (max-width: 424px) {
   body {
     font-size: 16px;
@@ -514,19 +519,6 @@
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  body .footer__section .attribution {
-    font-size: 12px;
-  }
-  body .footer__section .attribution a {
-    text-decoration: none;
-    color: #3e52a3;
-    font-style: italic !important;
-  }
-  body .footer__section .attribution em {
-    color: #3e52a3;
-    font-style: italic !important;
-    font-size: 12px;
-  }
 }
 
 .container {
@@ -822,6 +814,7 @@
     padding: 10px 20px;
     color: #f7f7f7;
     margin-right: 20px;
+    cursor: pointer;
   }
   body .download-section {
     margin-top: 40px;

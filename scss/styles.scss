@@ -25,4 +25,4 @@ $white: #f7f7f7;
   border-radius: 10px;
 }
 // Importing responsive styles
-@import "mobile", "desktop";
+@import "mixins", "mobile", "desktop";
