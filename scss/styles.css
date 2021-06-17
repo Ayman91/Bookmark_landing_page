@@ -976,17 +976,16 @@
     text-transform: uppercase;
   }
   body .newsletter__section .container .newsletter__section--paragraph {
-    font-size: 24px;
+    font-size: 2em;
     font-weight: normal;
   }
   body .newsletter__section .container .newsletter__section--buttons input[type="text"] {
     outline: none;
     width: 200px;
-    margin: 20px auto;
     background-color: none;
     border-radius: 5px;
     background: #f7f7f7;
-    padding: 10px;
+    padding: 12px;
     border: 5px;
     color: #9194a1;
   }
@@ -994,9 +993,10 @@
     background-color: none;
     border-radius: 5px;
     background: #fa5757;
-    padding: 10px;
+    padding: 12px 20px;
     border: 5px;
     color: #f7f7f7;
+    margin-left: 20px;
   }
   body .footer__section {
     display: -webkit-box;
