@@ -285,6 +285,11 @@
         color: $Grayish_Blue;
         line-height: 1.8em;
       }
+      input[type="button"] {
+        display: block;
+        margin: 20px auto;
+        @include button($Soft_Blue, none, 5px, 5px, 10px, $white);
+      }
     }
 
     // Newsletter Section

@@ -934,6 +934,16 @@
     color: #9194a1;
     line-height: 1.8em;
   }
+  body .faq-section input[type="button"] {
+    display: block;
+    margin: 20px auto;
+    background-color: none;
+    border-radius: 5px;
+    background: #5368df;
+    padding: 10px;
+    border: 5px;
+    color: #f7f7f7;
+  }
   body .newsletter__section {
     height: 300px;
     margin-top: 40px;
