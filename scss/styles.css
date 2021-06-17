@@ -543,6 +543,7 @@
     display: none;
   }
   body .d__nav {
+    margin-top: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -645,24 +646,51 @@
     margin: 30px 0 20px;
   }
   body .herobox .hero_text--section .buttons input[type="button"]:first-child {
+    cursor: pointer;
+    font-weight: 500;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
     background: #5368df;
     background-color: none;
-    border: 5px;
+    border: 2px solid #5368df;
     border-radius: 5px;
     padding: 10px 20px;
     color: #f7f7f7;
     margin-right: 20px;
   }
+  body .herobox .hero_text--section .buttons input[type="button"]:first-child:hover {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background: #f7f7f7;
+    background-color: #f7f7f7;
+    border: 2px solid #5368df;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #5368df;
+  }
   body .herobox .hero_text--section .buttons input[type="button"]:last-child {
+    cursor: pointer;
+    font-weight: 500;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-box-shadow: 0 4px 5px 1px #ddf;
+            box-shadow: 0 4px 5px 1px #ddf;
     background: #f7f7f7;
     background-color: none;
-    border: 5px;
+    border: 2px solid #f7f7f7;
     border-radius: 5px;
     padding: 10px 20px;
     color: #252b46;
-    font-weight: 600;
-    -webkit-box-shadow: 0 4px 5px 1px #ddf;
-            box-shadow: 0 4px 5px 1px #ddf;
+  }
+  body .herobox .hero_text--section .buttons input[type="button"]:last-child:hover {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background: #f7f7f7;
+    background-color: #f7f7f7;
+    border: 2px solid #252b46;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #252b46;
   }
   body .herobox .hero_image--section {
     display: -webkit-box;
@@ -710,6 +738,12 @@
     padding: 10px 20px;
     border-bottom: 1px solid #ddd;
     list-style-type: none;
+  }
+  body .features-section .features__section--navigation .features__section--nav li:hover {
+    color: #fa5757;
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
   body .features-section .features__section--tabs .features__section--tab1,
   body .features-section .features__section--tabs .features__section--tab2,
@@ -865,12 +899,25 @@
   }
   body .download-section .download__section--products .download__chrome--card input[type="button"] {
     margin: 10px;
-    background: #5368df;
-    background-color: none;
-    border: 5px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background: #f7f7f7;
+    background-color: #5368df;
+    border: 2px solid #5368df;
     border-radius: 5px;
     padding: 10px;
     color: #f7f7f7;
+  }
+  body .download-section .download__section--products .download__chrome--card input[type="button"]:hover {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    cursor: pointer;
+    background: #f7f7f7;
+    background-color: #f7f7f7;
+    border: 2px solid #5368df;
+    border-radius: 5px;
+    padding: 10px;
+    color: #5368df;
   }
   body .download-section .download__section--products .download__firefox--card {
     -ms-flex-item-align: center;
@@ -887,12 +934,25 @@
   }
   body .download-section .download__section--products .download__firefox--card input[type="button"] {
     margin: 10px;
-    background: #5368df;
-    background-color: none;
-    border: 5px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background: #f7f7f7;
+    background-color: #5368df;
+    border: 2px solid #5368df;
     border-radius: 5px;
     padding: 10px;
     color: #f7f7f7;
+  }
+  body .download-section .download__section--products .download__firefox--card input[type="button"]:hover {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    cursor: pointer;
+    background: #f7f7f7;
+    background-color: #f7f7f7;
+    border: 2px solid #5368df;
+    border-radius: 5px;
+    padding: 10px;
+    color: #5368df;
   }
   body .download-section .download__section--products .download__opera--card {
     -ms-flex-item-align: end;
@@ -908,12 +968,25 @@
   }
   body .download-section .download__section--products .download__opera--card input[type="button"] {
     margin: 10px;
-    background: #5368df;
-    background-color: none;
-    border: 5px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background: #f7f7f7;
+    background-color: #5368df;
+    border: 2px solid #5368df;
     border-radius: 5px;
     padding: 10px;
     color: #f7f7f7;
+  }
+  body .download-section .download__section--products .download__opera--card input[type="button"]:hover {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    cursor: pointer;
+    background: #f7f7f7;
+    background-color: #f7f7f7;
+    border: 2px solid #5368df;
+    border-radius: 5px;
+    padding: 10px;
+    color: #5368df;
   }
   body .faq-section {
     margin-top: 100px;
@@ -1005,13 +1078,26 @@
     color: #9194a1;
   }
   body .newsletter__section .container .newsletter__section--buttons input[type="button"] {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
     background: #fa5757;
     background-color: none;
-    border: 5px;
+    border: 2px solid #fa5757;
     border-radius: 5px;
     padding: 12px 20px;
     color: #f7f7f7;
     margin-left: 20px;
+  }
+  body .newsletter__section .container .newsletter__section--buttons input[type="button"]:hover {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    cursor: pointer;
+    background: #f7f7f7;
+    background-color: none;
+    border: 2px solid #fa5757;
+    border-radius: 5px;
+    padding: 12px 20px;
+    color: #fa5757;
   }
   body .footer__section {
     height: 60px;
@@ -1061,8 +1147,20 @@
         align-self: center;
     text-transform: uppercase;
   }
-  body .footer__section .container .footer__social--links a {
+  body .footer__section .container nav ul li:hover {
+    cursor: pointer;
+    color: #fa5757;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  body .footer__section .container .footer__social--links img {
     margin: 10px;
+  }
+  body .footer__section .container .footer__social--links img:hover {
+    cursor: pointer;
+    color: #fa5757;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
 }
 /*# sourceMappingURL=styles.css.map */

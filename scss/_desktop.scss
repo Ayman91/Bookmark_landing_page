@@ -11,6 +11,7 @@
     }
 
     .d__nav {
+      margin-top: 20px;
       display: flex;
       align-items: center;
       height: 40px;
@@ -88,13 +89,54 @@
         }
         .buttons {
           input[type="button"]:first-child {
-            @include button($Soft_Blue, none, 5px, 5px, 10px 20px, $white);
+            cursor: pointer;
+            font-weight: 500;
+            transition: 0.5s;
+            @include button(
+              $Soft_Blue,
+              none,
+              2px solid $Soft_Blue,
+              5px,
+              10px 20px,
+              $white
+            );
             margin-right: 20px;
+            &:hover {
+              transition: 0.5s;
+              @include button(
+                $white,
+                $white,
+                2px solid $Soft_Blue,
+                5px,
+                10px 20px,
+                $Soft_Blue
+              );
+            }
           }
           input[type="button"]:last-child {
-            @include button($white, none, 5px, 5px, 10px 20px, $Very_Dark_Blue);
-            font-weight: 600;
+            cursor: pointer;
+            font-weight: 500;
+            transition: 0.5s;
             box-shadow: 0 4px 5px 1px #ddf;
+            @include button(
+              $white,
+              none,
+              2px solid $white,
+              5px,
+              10px 20px,
+              $Very_Dark_Blue
+            );
+            &:hover {
+              transition: 0.5s;
+              @include button(
+                $white,
+                $white,
+                2px solid $Very_Dark_Blue,
+                5px,
+                10px 20px,
+                $Very_Dark_Blue
+              );
+            }
           }
         }
       }
@@ -132,6 +174,11 @@
             padding: 10px 20px;
             border-bottom: 1px solid #ddd;
             list-style-type: none;
+            &:hover {
+              color: $Soft_Red;
+              cursor: pointer;
+              transition: 0.5s;
+            }
           }
         }
       }
@@ -234,7 +281,27 @@
           }
           input[type="button"] {
             margin: 10px;
-            @include button($Soft_Blue, none, 5px, 5px, 10px, $white);
+            transition: 0.5s;
+            @include button(
+              $white,
+              $Soft_Blue,
+              2px solid $Soft_Blue,
+              5px,
+              10px,
+              $white
+            );
+            &:hover {
+              transition: 0.5s;
+              cursor: pointer;
+              @include button(
+                $white,
+                $white,
+                2px solid $Soft_Blue,
+                5px,
+                10px,
+                $Soft_Blue
+              );
+            }
           }
         }
         .download__firefox--card {
@@ -249,7 +316,27 @@
           }
           input[type="button"] {
             margin: 10px;
-            @include button($Soft_Blue, none, 5px, 5px, 10px, $white);
+            transition: 0.5s;
+            @include button(
+              $white,
+              $Soft_Blue,
+              2px solid $Soft_Blue,
+              5px,
+              10px,
+              $white
+            );
+            &:hover {
+              transition: 0.5s;
+              cursor: pointer;
+              @include button(
+                $white,
+                $white,
+                2px solid $Soft_Blue,
+                5px,
+                10px,
+                $Soft_Blue
+              );
+            }
           }
         }
         .download__opera--card {
@@ -264,7 +351,27 @@
           }
           input[type="button"] {
             margin: 10px;
-            @include button($Soft_Blue, none, 5px, 5px, 10px, $white);
+            transition: 0.5s;
+            @include button(
+              $white,
+              $Soft_Blue,
+              2px solid $Soft_Blue,
+              5px,
+              10px,
+              $white
+            );
+            &:hover {
+              transition: 0.5s;
+              cursor: pointer;
+              @include button(
+                $white,
+                $white,
+                2px solid $Soft_Blue,
+                5px,
+                10px,
+                $Soft_Blue
+              );
+            }
           }
         }
       }
@@ -345,8 +452,28 @@
             @include button($white, none, 5px, 5px, 12px, $Grayish_Blue);
           }
           input[type="button"] {
-            @include button($Soft_Red, none, 5px, 5px, 12px 20px, $white);
+            transition: 0.5s;
+            @include button(
+              $Soft_Red,
+              none,
+              2px solid $Soft_Red,
+              5px,
+              12px 20px,
+              $white
+            );
             margin-left: 20px;
+            &:hover {
+              transition: 0.5s;
+              cursor: pointer;
+              @include button(
+                $white,
+                none,
+                2px solid $Soft_Red,
+                5px,
+                12px 20px,
+                $Soft_Red
+              );
+            }
           }
         }
       }
@@ -376,12 +503,22 @@
               align-self: center;
               text-transform: uppercase;
               // padding: 5px 10px;
+              &:hover {
+                cursor: pointer;
+                color: $Soft_Red;
+                transition: 0.5s;
+              }
             }
           }
         }
         .footer__social--links {
-          a {
+          img {
             margin: 10px;
+            &:hover {
+              cursor: pointer;
+              color: $Soft_Red;
+              transition: 0.5s;
+            }
           }
         }
       }
