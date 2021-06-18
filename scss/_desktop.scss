@@ -431,6 +431,9 @@
         margin: 10px 0;
         color: $Grayish_Blue;
         line-height: 1.8em;
+        height: 0px;
+        overflow: hidden;
+        transition: height 0.2s ease-in;
       }
       input[type="button"] {
         display: block;

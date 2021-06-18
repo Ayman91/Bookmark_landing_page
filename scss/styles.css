@@ -1031,6 +1031,10 @@
     margin: 10px 0;
     color: #9194a1;
     line-height: 1.8em;
+    height: 0px;
+    overflow: hidden;
+    -webkit-transition: height 0.2s ease-in;
+    transition: height 0.2s ease-in;
   }
   body .faq-section input[type="button"] {
     display: block;

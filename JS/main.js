@@ -31,3 +31,14 @@ easy.addEventListener("click", () => {
   speedy.classList.remove("active");
   easy.classList.add("active");
 });
+
+const answer = document.querySelector(".answer");
+const question = document.querySelector(".question");
+
+question.addEventListener("click", function () {
+  if (answer.style.height) {
+    answer.style.height = null;
+  } else {
+    answer.style.height = answer.scrollHeight + "px";
+  }
+});
