@@ -172,13 +172,30 @@
           margin: 50px 0;
           justify-content: center;
           li {
-            padding: 10px 20px;
+            color: $Grayish_Blue;
+            width: 200px;
+            text-align: center;
+            position: relative;
             border-bottom: 1px solid #ddd;
+            padding: 10px 20px;
             list-style-type: none;
             &:hover {
               color: $Soft_Red;
               cursor: pointer;
               transition: 0.5s;
+            }
+          }
+          .active {
+            color: $Soft_Red;
+            &::after {
+              content: "";
+              left: 0px;
+              bottom: -1px;
+              height: 3px;
+              z-index: 1;
+              width: 200px;
+              position: absolute;
+              background-color: $Soft_Red;
             }
           }
         }
